@@ -9,13 +9,13 @@
     <a href="https://interactive-rating-system-zeta.vercel.app/">View a project demo</a>
   </p>
 
-![My Image](assets/images/desktop-preview.jpg)
+![My Image](src/assets/images/desktop-preview.jpg)
 
 </div>
 
 ## Lighthouse Statistics
 
-![My Image](assets/images/lighthouse.png)
+![My Image](src/assets/images/lighthouse.png)
 
 <!-- TABLE OF CONTENTS -->
 <details>
