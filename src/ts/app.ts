@@ -20,14 +20,14 @@ export const ratingSystem = function () {
     return true;
   };
 
+  const setRating = function (rate: RatingValue) {
+    rating["value"] = rate;
+  };
+
   const changeUI = function () {
     ratingElement!.textContent = String(rating["value"]);
     ratingContainer?.setAttribute("hidden", "true");
     summaryContainer?.removeAttribute("hidden");
-  };
-
-  const setRating = function (rate: RatingValue) {
-    rating["value"] = rate;
   };
 
   const changeRating = function (ev: Event) {
