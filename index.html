@@ -13,7 +13,54 @@
     />
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <main class="main">
+        <div class="wrapper">
+          <h1 class="visuallyhidden">Support Rating Request</h1>
+          <section class="section-summary">
+            <div class="summary">
+              <div class="summary__image">
+                <img
+                  src="./src/assets/images/icon-star.svg"
+                  alt=""
+                  class="image"
+                  role="presentation"
+                  aria-hidden="true"
+                />
+              </div>
+              <h2 class="heading__secondary">How did we do?</h2>
+              <p class="description">
+                Please let us know how we did with your support request. All
+                feedback is appreciated to help us improve our offering!
+              </p>
+              <form class="form">
+                <div class="form__item">
+                  <input type="radio" name="rating" id="rating1" value="1" />
+                  <label for="rating1">1</label>
+                </div>
+                <div class="form__item">
+                  <input type="radio" name="rating" id="rating2" value="2" />
+                  <label for="rating2">2</label>
+                </div>
+                <div class="form__item">
+                  <input type="radio" name="rating" id="rating3" value="3" />
+                  <label for="rating3">3</label>
+                </div>
+                <div class="form__item">
+                  <input type="radio" name="rating" id="rating4" value="4" />
+                  <label for="rating4">4</label>
+                </div>
+                <div class="form__item">
+                  <input type="radio" name="rating" id="rating5" value="5" />
+                  <label for="rating5">5</label>
+                </div>
+                <input type="submit" value="Submit" class="btn form--button" />
+              </form>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
