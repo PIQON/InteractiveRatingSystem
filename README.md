@@ -6,7 +6,7 @@
      Interactive Rating System based on frontend mentor design..
     <br />
     <br />
-    <a href="https://results-summary-kwdw.vercel.app/">View a project demo</a>
+    <a href="https://interactive-rating-system-zeta.vercel.app/">View a project demo</a>
   </p>
 
 ![My Image](assets/images/desktop-preview.jpg)
