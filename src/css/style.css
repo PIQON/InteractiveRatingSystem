@@ -2,6 +2,7 @@
   --color-primary-400: hsl(25, 97%, 53%);
   --color-primary-300: hsl(216, 12%, 8%);
   --color-primary-200: hsl(213, 19%, 18%);
+  --color-primary-100: hsl(213, 19%, 28%);
   --color-neutral-400: hsl(0, 0%, 100%);
   --color-neutral-300: hsl(217, 12%, 63%);
   --color-neutral-200: hsl(216, 12%, 54%);
@@ -19,4 +20,181 @@ body {
   font-family: "Overpass", sans-serif;
   font-weight: 400;
   line-height: 1;
+
+  overflow-x: hidden;
+}
+
+.main {
+  min-height: 100vh;
+  background-color: var(--color-primary-300);
+}
+
+.wrapper {
+  --width: 30rem;
+  max-width: var(--width);
+  margin: 0 auto;
+}
+
+/* Typography */
+
+.heading__secondary {
+  font-size: 1.728rem;
+  color: var(--color-neutral-400);
+}
+
+.description {
+  line-height: 1.5;
+  color: var(--color-neutral-300);
+}
+
+/* Reuseable */
+
+.u-margin-bottom-small {
+  margin-bottom: 1rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 2rem;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Rating */
+
+.section-rating {
+  padding: 0 1rem;
+}
+
+.rating,
+.summary {
+  padding: 2.074rem;
+  border-radius: 12px;
+  background-color: var(--color-primary-200);
+}
+
+.rating__image {
+  width: 2.074rem;
+  height: 2.074rem;
+  border-radius: 50%;
+  background-color: var(--color-primary-100);
+}
+
+/* Summary */
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.summary__rating {
+  padding: 0.482rem 1rem;
+  border-radius: 10rem;
+  color: var(--color-primary-400);
+  background-color: var(--color-primary-100);
+}
+
+/* Form */
+
+.form__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.form__content input[type="radio"]:checked + label,
+.form__content input[type="radio"]:focus + label {
+  background-color: var(--color-primary-400);
+  color: var(--color-neutral-400);
+}
+
+.form__content input[type="radio"]:hover + label {
+  background-color: var(--color-neutral-200);
+  color: var(--color-neutral-400);
+}
+
+.form__label {
+  --size: 2.986rem;
+  width: var(--size);
+  height: var(--size);
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: var(--color-primary-100);
+  color: var(--color-neutral-200);
+
+  transition: 0.3s;
+}
+
+/* Button */
+
+.btn {
+  color: var(--color-neutral-400);
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  border-radius: 10rem;
+}
+
+.form--button {
+  width: 100%;
+  padding: 0.833rem;
+  background-color: var(--color-primary-400);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+
+  transition: 0.3s;
+}
+
+.form--button:hover {
+  background-color: var(--color-neutral-400);
+  color: var(--color-primary-400);
+}
+
+/* VisuallyHidden */
+
+*[hidden] {
+  display: none;
+}
+
+.visuallyhidden {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(
+    1px 1px 1px 1px
+  ); /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
+  clip: rect(
+    1px,
+    1px,
+    1px,
+    1px
+  ); /*maybe deprecated but we need to support legacy browsers */
+  clip-path: inset(
+    50%
+  ); /*modern browsers, clip-path works inwards from each corner*/
+  white-space: nowrap; /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
+}
+
+/* Media */
+
+@media (max-width: 25rem) {
+  .rating,
+  .summary {
+    padding: 1.728rem;
+  }
+  .form__label {
+    --size: 2.488rem;
+  }
 }

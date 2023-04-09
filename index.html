@@ -14,12 +14,12 @@
   </head>
   <body>
     <div id="app">
-      <main class="main">
+      <main class="main flex-center">
         <div class="wrapper">
           <h1 class="visuallyhidden">Support Rating Request</h1>
-          <section class="section-summary">
-            <div class="summary">
-              <div class="summary__image">
+          <section class="section-rating">
+            <div class="rating">
+              <div class="rating__image flex-center u-margin-bottom-medium">
                 <img
                   src="./src/assets/images/icon-star.svg"
                   alt=""
@@ -28,34 +28,97 @@
                   aria-hidden="true"
                 />
               </div>
-              <h2 class="heading__secondary">How did we do?</h2>
-              <p class="description">
+              <h2 class="heading__secondary u-margin-bottom-small">
+                How did we do?
+              </h2>
+              <p class="description u-margin-bottom-medium">
                 Please let us know how we did with your support request. All
                 feedback is appreciated to help us improve our offering!
               </p>
               <form class="form">
-                <div class="form__item">
-                  <input type="radio" name="rating" id="rating1" value="1" />
-                  <label for="rating1">1</label>
-                </div>
-                <div class="form__item">
-                  <input type="radio" name="rating" id="rating2" value="2" />
-                  <label for="rating2">2</label>
-                </div>
-                <div class="form__item">
-                  <input type="radio" name="rating" id="rating3" value="3" />
-                  <label for="rating3">3</label>
-                </div>
-                <div class="form__item">
-                  <input type="radio" name="rating" id="rating4" value="4" />
-                  <label for="rating4">4</label>
-                </div>
-                <div class="form__item">
-                  <input type="radio" name="rating" id="rating5" value="5" />
-                  <label for="rating5">5</label>
+                <div class="form__content u-margin-bottom-medium">
+                  <div class="form__item">
+                    <input
+                      type="radio"
+                      name="rating"
+                      id="rating1"
+                      value="1"
+                      class="visuallyhidden"
+                    />
+                    <label for="rating1" class="form__label flex-center"
+                      >1</label
+                    >
+                  </div>
+                  <div class="form__item">
+                    <input
+                      type="radio"
+                      name="rating"
+                      id="rating2"
+                      value="2"
+                      class="visuallyhidden"
+                    />
+                    <label for="rating2" class="form__label flex-center"
+                      >2</label
+                    >
+                  </div>
+                  <div class="form__item">
+                    <input
+                      type="radio"
+                      name="rating"
+                      id="rating3"
+                      value="3"
+                      class="visuallyhidden"
+                    />
+                    <label for="rating3" class="form__label flex-center"
+                      >3</label
+                    >
+                  </div>
+                  <div class="form__item">
+                    <input
+                      type="radio"
+                      name="rating"
+                      id="rating4"
+                      value="4"
+                      class="visuallyhidden"
+                    />
+                    <label for="rating4" class="form__label flex-center"
+                      >4</label
+                    >
+                  </div>
+                  <div class="form__item">
+                    <input
+                      type="radio"
+                      name="rating"
+                      id="rating5"
+                      value="5"
+                      class="visuallyhidden"
+                    />
+                    <label for="rating5" class="form__label flex-center"
+                      >5</label
+                    >
+                  </div>
                 </div>
                 <input type="submit" value="Submit" class="btn form--button" />
               </form>
+            </div>
+            <div class="summary" hidden>
+              <div class="summary__image u-margin-bottom-small">
+                <img
+                  src="./src/assets/images/illustration-thank-you.svg"
+                  alt="Flying phone with credit card and terminal"
+                  class="image"
+                />
+              </div>
+              <p class="summary__rating u-margin-bottom-medium">
+                You selected <span>4</span> out of 5
+              </p>
+              <h2 class="heading__secondary u-margin-bottom-small">
+                Thank you!
+              </h2>
+              <p class="description">
+                We appreciate you taking the time to give a rating. If you ever
+                need more support, don't hesitate to get in touch!
+              </p>
             </div>
           </section>
         </div>
